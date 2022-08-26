@@ -104,4 +104,5 @@ void playTone (char values){
       Serial.println("N");
       tone1.stop();
   }
+  delay(100);
 }
