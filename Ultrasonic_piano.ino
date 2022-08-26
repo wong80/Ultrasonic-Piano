@@ -3,13 +3,14 @@
 Tone tone1;
 float distance, duration;
 //array of notes that can be played 
-int notes[] = { NOTE_C4,
-                NOTE_D4,
-                NOTE_E4,
-                NOTE_F4,
-                NOTE_G4,
-                NOTE_A3,
-                NOTE_B3
+int notes[] = {
+  NOTE_C4,
+  NOTE_D4,
+  NOTE_E4,
+  NOTE_F4,
+  NOTE_G4,
+  NOTE_A3,
+  NOTE_B3
 };
                 
 char values [] = {'C','D','E','F','G','A','B','N'};
