@@ -16,7 +16,7 @@ int notes[] = {
 char values [] = {'C','D','E','F','G','A','B','N'};
 int trig[] = {41,43,45,47,49,51,53};
 int echo[] = {40,42,44,46,48,50,52};
-int playing = -1;
+int playing = 0;
 //trig pin for ultrasonic sensors {41 - 53}
 //echo pin for ultrasonic sensors {40 - 52}
 
@@ -33,7 +33,7 @@ void setup() {
 }
 
 void loop() {
-  playing = -1;
+  playing = 0;
   for (int i=0; i<7; i+=1){
     digitalWrite(trig[i],LOW);
     delayMicroseconds(2);
@@ -55,11 +55,7 @@ void loop() {
     }
   }
 
-  if (playing >= 0) {
-    playTone(values[playing]);
-  } else {
-    playTone(values[7]);
-  }
+  playTone(values[playing]);
 }
   
 
